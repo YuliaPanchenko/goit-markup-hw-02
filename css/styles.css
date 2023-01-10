@@ -1,0 +1,188 @@
+/* color-main-black: #212121;
+color-secondary: #757575;
+color-blue: #2196F3;
+color-white: #FFFFFF; */
+
+/* main white background #F5F5F5; 
+secondary black background #2F303A;
+third background #F5F4FA;*/
+:root {
+  /* text color */
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-blue-color: #2196f3;
+  --whire-color: #ffffff;
+
+  /* background color */
+  --main-white-background: #f5f5f5;
+  --secondary-black-background: #2f303a;
+  --third-background-color: #f5f4fa;
+}
+
+body {
+  background-color: var(--main-white-background);
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+/*-----------------HEADER Logo--------------------------------- */
+.logo {
+  color: var(--accent-blue-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo > span {
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* site-nav */
+.site-nav .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-blue-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-blue-color);
+}
+
+.auth-nav .mail,
+.auth-nav .tel {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.auth-nav .mail:hover,
+.auth-nav .mail:focus,
+.auth-nav .tel:hover,
+.auth-nav .tel:focus {
+  color: #2196f3;
+}
+
+/*-------------1 SECTION HERO----------------------------------------- */
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+/* secondary text color for all <p> */
+.text {
+  color: var(--secondary-text-color);
+}
+
+/* ----------------2 SECTION principles чому саме ми------------------ */
+.principles-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.principles-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* ----------------3 SECTION EXAMPLES приклади робіт------------------ */
+.examples-title,
+.team-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+/* ----------------4 SECTION TEAM наша команда-----------------------  */
+.team-person {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+/* --------------------------FOOTER----------------------------------- */
+.footer {
+  background-color: var(--secondary-black-background);
+}
+.footer-logo {
+  color: var(--accent-blue-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.footer-logo > span {
+  color: #ffffff;
+}
+
+.footer-address {
+  color: #ffffff;
+  font-style: normal;
+  text-decoration: none;
+}
+.footer-mail,
+.footer-tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  text-decoration: none;
+}
+
+/* ------------------------------------------------CSS for Portfolio------------------------------------
+--------------------------1 SECTON FILTER------------------------------------------- */
+.button-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+
+  background-color: var(--third-background-color);
+  color: var(--primary-text-color);
+}
+.button-list:hover,
+.button-list:focus {
+  background-color: var(--accent-blue-color);
+  color: var(--whire-color);
+}
+/* -----------------------2 SECTION PORTFOLIO----------------------------------------------- */
+.portfolio-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.88;
+}
