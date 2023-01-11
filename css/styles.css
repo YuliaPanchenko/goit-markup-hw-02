@@ -11,7 +11,7 @@ third background #F5F4FA;*/
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-blue-color: #2196f3;
-  --whire-color: #ffffff;
+  --white-color: #ffffff;
 
   /* background color */
   --main-white-background: #f5f5f5;
@@ -20,9 +20,10 @@ third background #F5F4FA;*/
 }
 
 body {
-  background-color: var(--main-white-background);
+  background-color: var(--white-color);
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
   letter-spacing: 0.03em;
 }
 /*-----------------HEADER Logo--------------------------------- */
@@ -79,12 +80,18 @@ body {
 }
 
 /*-------------1 SECTION HERO----------------------------------------- */
+.hero {
+  background-color: var(--secondary-black-background);
+  text-align: center;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--white-color);
 }
 
 .hero-button {
@@ -92,6 +99,9 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  cursor: pointer;
+  background-color: var(--accent-blue-color);
+  color: var(--white-color);
 }
 
 /* secondary text color for all <p> */
@@ -118,6 +128,10 @@ body {
   text-align: center;
 }
 /* ----------------4 SECTION TEAM наша команда-----------------------  */
+.team {
+  background-color: var(--third-background-color);
+}
+
 .team-person {
   font-weight: 500;
   font-size: 16px;
@@ -129,6 +143,10 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+}
+
+.team-item {
+  background-color: var(--white-color);
 }
 /* --------------------------FOOTER----------------------------------- */
 .footer {
@@ -149,15 +167,24 @@ body {
 .footer-address {
   color: #ffffff;
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
   text-decoration: none;
 }
 .footer-mail,
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
   text-decoration: none;
 }
 
+.footer-address:hover,
+.footer-mail:hover,
+.footer-tel:hover {
+  text-decoration-line: #2196f3;
+}
 /* ------------------------------------------------CSS for Portfolio------------------------------------
 --------------------------1 SECTON FILTER------------------------------------------- */
 .button-list {
@@ -173,9 +200,13 @@ body {
 .button-list:hover,
 .button-list:focus {
   background-color: var(--accent-blue-color);
-  color: var(--whire-color);
+  color: var(--white-color);
 }
 /* -----------------------2 SECTION PORTFOLIO----------------------------------------------- */
+.portfolio-main {
+  background-color: var(--white-color);
+}
+
 .portfolio-title {
   font-size: 18px;
   line-height: 2;
