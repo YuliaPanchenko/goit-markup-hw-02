@@ -95,6 +95,7 @@ body {
 }
 
 .hero-button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -180,20 +181,21 @@ body {
   text-decoration: none;
 }
 
-.footer-address:hover,
 .footer-mail:hover,
 .footer-tel:hover {
-  text-decoration-line: #2196f3;
+  color: #2196f3;
 }
 /* ------------------------------------------------CSS for Portfolio------------------------------------
 --------------------------1 SECTON FILTER------------------------------------------- */
 .button-list {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   cursor: pointer;
 
+  border: none;
   background-color: var(--third-background-color);
   color: var(--primary-text-color);
 }
